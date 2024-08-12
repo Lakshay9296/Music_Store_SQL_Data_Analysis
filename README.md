@@ -5,6 +5,7 @@ This project involves analyzing a music store database using SQL. The database c
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Database Structure](#database-structure)
+- [Problem Statement](#problem-statement)
 - [Analysis](#analysis)
 - [Results](#results)
 
@@ -25,6 +26,34 @@ The database consists of the following tables:
 - `playlist_track.csv`: Lists the tracks included in each playlist.
 - `track.csv`: Contains detailed information about each track, including album and genre.
 
+## Problem Statement
+The analysis aims to answer the following questions divided into three sets based on difficulty:
+
+### Question Set 1 - Easy
+1. **Who is the senior most employee based on job title?**
+2. **Which countries have the most Invoices?**
+3. **What are the top 3 values of total invoice?**
+4. **Which city has the best customers?**  
+   We would like to throw a promotional Music Festival in the city where we made the most money. Write a query that returns the city with the highest sum of invoice totals, including the city name & the total sum.
+5. **Who is the best customer?**  
+   The customer who has spent the most money will be declared the best customer. Write a query that returns the person who has spent the most money.
+
+### Question Set 2 - Moderate
+1. **Identify Rock Music listeners.**  
+   Write a query to return the email, first name, last name, & genre of all Rock Music listeners. Order the list alphabetically by email starting with A.
+2. **Top Rock Music Artists.**  
+   Let's invite the artists who have written the most rock music in our dataset. Write a query that returns the artist name and total track count of the top 10 rock bands.
+3. **Find long songs.**  
+   Return all the track names that have a song length longer than the average song length. Return the Name and Milliseconds for each track, ordered by song length with the longest songs listed first.
+
+### Question Set 3 - Advanced
+1. **Spending by Customers on Artists.**  
+   Find how much each customer spent on artists. Write a query to return the customer name, artist name, and total amount spent.
+2. **Most Popular Music Genre by Country.**  
+   Determine the most popular genre as the genre with the highest amount of purchases. Write a query that returns each country along with the top genre. For countries where the maximum number of purchases is shared, return all relevant genres.
+3. **Top Spending Customer by Country.**  
+   Determine the customer who has spent the most on music for each country. Write a query that returns the country along with the top customer and their total spending.
+
 ## Analysis
 The project covers the following analyses:
 1. **Sales Trends Analysis**: Analyzes the overall sales trends, identifying peak periods and popular products.
@@ -35,4 +64,3 @@ The project covers the following analyses:
 
 ## Results
 The analysis provides insights into the music store's operations, helping to identify key trends, optimize inventory, and improve customer engagement. The SQL queries used in this project extract valuable information that can be used for strategic decision-making.
-
